@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "FicFollower",
+  "description": "Follows your Fics",
+  "version": "0.0.1",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.archiveofourown.org/*",
+        "https://archiveofourown.org/*"
+      ],
+      "js": [
+        "scripts/ao3.js"
+      ]
+    }
+  ]
+}
