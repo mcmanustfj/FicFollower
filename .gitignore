@@ -1,3 +1,4 @@
 ChromeExt/dist/**
 ChromeExt/node_modules/**
 .vscode
+*.exe
